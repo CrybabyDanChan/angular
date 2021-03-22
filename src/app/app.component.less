@@ -1,0 +1,16 @@
+input {
+  border: 1px solid black;
+  &:focus {
+    outline: none;
+  }
+  &.ng-invalid.ng-dirty {
+    border: 1px solid red;
+  }
+  &.ng-valid.ng-dirty {
+    border: 1px solid green;
+  }
+}
+
+p {
+  color: red;
+}

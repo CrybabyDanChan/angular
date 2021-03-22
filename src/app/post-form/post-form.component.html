@@ -1,0 +1,15 @@
+<div id="container">
+  <label for="input"> Title</label>
+  <input 
+    id="input" 
+    type="text"
+    [(ngModel)]="title"
+    #titleInput
+  >
+  <button 
+    class="btn"
+    [appStyle]="'red'" 
+    [styleData]="{ border: 1 }" 
+    (click)="onCreatePost()"
+  >Add post</button>
+</div>
